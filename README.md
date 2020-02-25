@@ -1,5 +1,7 @@
 # Todo-list
-A Pure JQuery based Todo list application
+A Pure JQuery based Todo list application.
+
+## [Demo](https://mainak10.github.io/Todo-list/)
 
 # JQuery usages
 
