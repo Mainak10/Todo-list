@@ -1,2 +1,2 @@
 # Todo-list
-A Pure JQuery based simple Todo list application
+A Pure JQuery based Todo list application
