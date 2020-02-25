@@ -8,9 +8,14 @@ $('ul').on('click','li',function () {
 //remove items on click the delete icon
 
 $('ul').on('click','span',function (event) {
+
+	//Fadding out with 500ms delay hen removing the item/li element
+
 	$(this).parent().fadeOut(500, function () {
 		$(this).remove();
 	})
+
+	//Will stop event bubbles from child to parent!
 	event.stopPropagation();
 });
 
@@ -29,8 +34,19 @@ $("input[type='text']").keypress(function(event){
 	}
 })
 
+//on loading of the page showing only the minus icon with 
+//Input text available
+
 $(".fa").click(function(){
+
+	//Fadding out and fadding in with 100ms delay of input text field
+
 	$("input[type='text']").fadeToggle(100);
+
+	//Tooggling class name with minus and plus
+
 	let className = this.className === 'fa fa-minus'?'fa fa-plus':'fa fa-minus';
+
+	//Finally adding the class name after setting
 	$('h1 i').removeClass().addClass(className);
 })
